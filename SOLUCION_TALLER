@@ -1,0 +1,251 @@
+#POR BURBUJA
+#PRIMER PUNTO
+# Ordenación de notas de estudiantes: Dado un arreglo de calificaciones, ordénalas de menor amayor usando el método de burbuja.
+
+# notas =[2,5,1,3,4]
+# n = len(notas) 
+# for i in range(n):  
+#     for j in range(n - 1):  
+#         if notas[j] > notas[j + 1]:
+#             notas[j], notas[j + 1] = notas[j + 1], notas[j]
+# print(f"El orden de las notas es: {notas}")
+
+#SEGUNDO PUNTO 
+# Ordenación de nombres por longitud: Ordena una lista de nombres según la cantidad de caracteres utilizando ordenamiento burbuja.
+
+# nombres = ["sandra","catalina","laura","juliana"]
+# def mayor(nombres):
+#     n = len(nombres)
+#     for i in range(n): 
+#         for j in range (n -1):
+#             if len(nombres[j]) > len(nombres [j + 1]):
+#                 nombres[j], nombres[j+1] = nombres [j+1], nombres [j]
+# mayor(nombres)
+# print(f"El orden de los nombres es: {nombres}") 
+
+#TERCER PUNTO
+#Temperaturas diarias: Un sensor registra las temperaturas de una semana. Ordena los valoresde mayor a menor utilizando burbuja.
+
+# temperaturas =[2,9,6,3,7]
+# n = len(temperaturas) 
+# for i in range(n):  
+#     for j in range(n - 1):  
+#         if temperaturas[j] < temperaturas[j + 1]:             
+#             temperaturas[j], temperaturas[j + 1] = temperaturas[j + 1], temperaturas[j]
+# print(f"El orden de las temperaturas es: {temperaturas}")
+
+#CUARTO PUNTO
+#Orden de llegada de corredores: Dado un listado de tiempos de llegada en una carrera,ordénalos de menor a mayor usando burbuja.
+
+# llegada =[9,5,1,7,3,4]
+# n = len(llegada) 
+# for i in range(n):  
+#     for j in range(n - 1):  
+#         if llegada[j] > llegada[j + 1]: 
+#             llegada[j], llegada[j + 1] = llegada[j + 1], llegada[j]
+# print(f"El orden de llegada e: {llegada}")
+
+#QUINTO PUNTO
+#Ordenación de precios de productos: Un sistema de inventario tiene precios desordenados.
+#Ordénalos ascendentemente con burbuja.
+
+# precios = [1.200, 4.000, 6.000, 3.000, 7.500]
+# n = len(precios)
+# for i in range(n):
+#     for j in range(n-1):
+#         if precios[j] > precios[j+1]:
+#             precios[j], precios[j+1] = precios[j+1], precios[j]
+# print(f"El orden de los precios es: {precios}")
+
+
+
+#POR INSERCION
+#PRIMER PUNTO
+#Ordenación de edades: Un grupo de personas tiene diferentes edades. Utiliza inserción para ordenarlas de menor a mayor.
+#ordenarlas de menor a mayor.
+
+# edades = [12, 45, 25, 78, 57, 29]
+# def edad(lista):
+#     for i in range(1, len(edades)): 
+#         valor = lista[i]
+#         j = i - 1 
+#         while j >= 0 and lista[j] > valor:
+#             lista[j + 1] = lista[j]
+#             j -= 1
+#         lista[j + 1] = valor
+# edad(edades)
+# print(f"El orden de edades es: {edades}")
+
+#SEGUNDO PUNTO
+#Ranking de puntuaciones: Un juego guarda las puntuaciones de jugadores. Ordena las puntuaciones en orden descendente usando inserción.
+
+# juego = [74, 80, 25, 19, 40, 36]
+# def final(cortes):
+#     for i in range(1, len(juego)):
+#         aux = juego[i]
+#         j = i - 1
+#         while j >= 0 and aux > juego[j]:
+#             juego [j+1] = juego [j]
+#             juego [j] = aux
+#             j -= 1
+# final(juego)
+# print(f"El orden depuntuaciones es: {juego}")
+
+#TERCER PUNTO
+#Ordenación de caracteres en una palabra: Dada una palabra, ordénala alfabéticamente utilizando el método de inserción.
+
+# alfabeto = "ORDENACION"
+# def caracteres(alfabeto):
+#     alfabeto = list(alfabeto)
+#     for i in range(1, len(alfabeto)):
+#         aux = alfabeto[i]
+#         j = i - 1
+#         while j >= 0 and alfabeto[j] > aux:
+#             alfabeto[j + 1] = alfabeto[j]
+#             j -= 1
+#         alfabeto[j + 1] = aux
+#     return ''.join(alfabeto)
+# print("Palabra ordenada alfabéticamente:", caracteres(alfabeto))
+# print("Palabra original:", alfabeto)
+
+
+#CUARTO PUNTO
+#Ordenación de ventas diarias: Se registraron ventas diarias de una tienda. Ordénalas en orden ascendente con inserción.
+
+# ventas = [10.000, 55.000, 82.000, 49.000, 29.000]
+# def diarias(cortes):
+#     for i in range(1, len(cortes)): 
+#         productos = cortes[i]  
+#         j = i - 1  
+#         while j >= 0 and cortes[j] > productos:
+#             cortes[j + 1] = cortes[j]
+#             j -= 1
+#         cortes[j + 1] = productos
+# diarias(ventas)
+# print(f"el orden de ventas diarias es: {ventas}")
+
+#QUINTO PUNTO
+#Ordenación de distancia entre ciudades: Dado un arreglo con distancias entre ciudades,ordénalas de menor a mayor usando inserción.
+
+# distancia = [10.000, 72.000, 91.000, 102.000, 35.000]
+# def km(ciudades):
+#     for i in range(1, len(ciudades)): 
+#         orden = ciudades[i]  
+#         j = i - 1  
+#         while j >= 0 and ciudades[j] > orden:
+#             ciudades[j + 1] = ciudades[j]
+#             j -= 1
+#         ciudades[j + 1] = orden
+# km(distancia)
+# print(f"La distancia entre ciudades es: {distancia}")
+
+
+
+#POR LIBRE ELECCION
+#PRIMER PUNTO
+#Ordenación de salarios: Dado un conjunto de salarios de empleados, ordénalos utilizando el método de selección.
+
+# salario = [1.200, 3.400, 2.500, 1.800]
+# n = len(salario)
+# for i in range(n):
+#     for j in range((n-1)):
+#         if salario[j] > salario[j+1]:
+#          salario[j], salario [j+1] = salario [j+1], salario[j] 
+# print(f"el orden de salarios de los empleados es: {salario}")
+    
+#SEGUNDO PUNTO
+#Ordenación de puntajes deportivos: Ordena una lista de puntajes deportivos utilizando el método de quicksort.
+
+# puntajes = [89, 34, 100, 67, 45, 81, 72, 95]
+# def puntos(arreglo, mas, menos):
+#     deporte = arreglo[menos]
+#     i = mas - 1
+#     for j in range(mas, menos):
+#         if arreglo[j] <= deporte:
+#             i += 1
+#             arreglo[i], arreglo[j] = arreglo[j], arreglo[i]
+#     arreglo[i+1], arreglo[menos] = arreglo[menos], arreglo[i+1] 
+#     return i+1 
+# def ordenacion(arreglo, mas, menos):
+#     if mas < menos:
+#         final = puntos(arreglo, mas, menos)
+#         ordenacion(arreglo, mas, final - 1)
+#         ordenacion(arreglo, final + 1, menos)
+# ordenacion(puntajes, 0, len(puntajes) - 1)
+# print(f"el orden de los puntajes es: {puntajes}")
+
+#TERCER PUNTO
+#Lista de números aleatorios: Genera una lista de 20 números aleatorios y ordénalos con el algoritmo de mergesort.
+
+# lista = [38, 27, 43, 3, 9, 82, 10, 74, 92, 26, 51, 32, 70, 50, 62, 78, 39, 41, 85, 66]
+# def orden(arreglo):
+#     if len(arreglo) > 1:
+#         auxiliar = len(arreglo) // 2
+#         numeros = arreglo[:auxiliar]    
+#         conf = arreglo[auxiliar:]
+#         orden(numeros)
+#         orden(conf)
+#         i = j = k = 0 
+#         while i < len(numeros) and j < len(conf):
+#             if numeros[i] < conf[j]:
+#                 arreglo[k] = numeros[i]
+#                 i += 1
+#             else:
+#                 arreglo[k] = conf[j]
+#                 j += 1
+#             k += 1
+#         while i < len(numeros):
+#             arreglo[k] = numeros[i]
+#             i += 1
+#             k += 1
+#         while j < len(conf):
+#             arreglo[k] = conf[j]
+#             j += 1
+#             k += 1
+#     return arreglo
+# orden (lista)
+# print(f"el orden de los numeros de la lista: {lista}")
+
+#CUARTO PUNTO
+#Ordenación de nombres por orden alfabético inverso: Usa el método de shell sort para ordenar una lista de nombres en orden descendente. 
+
+# nombres = ["Carlos", "Ana", "Beatriz", "Luis", "Fernando"]
+# def alfabeto(arreglo):
+#     n = len(arreglo)
+#     orden = n // 2
+#     while orden > 0:
+#         for i in range(orden, n):
+#             temp = arreglo[i]
+#             j = i
+#             while j >= orden and arreglo[j - orden] < temp:
+#                 arreglo[j] = arreglo[j - orden]
+#                 j -= orden
+#             arreglo[j] = temp
+#         orden //= 2
+#     return arreglo
+# alfabeto (nombres)
+# print(f"el orden de los nombres es: {nombres}")
+
+#QUINTO PUNTO
+#Ordenación de productos por fecha de caducidad: Dado un conjunto de productos con fechas de caducidad, ordénalos utilizando el método de heapsort.
+
+
+# def caducidad(objetos):
+#     n = len(objetos)
+#     for i in range(n-1):
+#         for j in range(n-i-1):
+#             if objetos[j]["fecha_vencimiento"] > objetos[j+1]["fecha_vencimiento"]:
+#                 objetos[j], objetos[j+1] = objetos[j+1], objetos[j]
+#     return objetos
+# objetos = [
+#     {"NOMBRE": "jabon", "fecha_vencimiento": "2010-07-30"},
+#     {"NOMBRE": "zapatos", "fecha_vencimiento": "2019-02-09"},
+#     {"NOMBRE": "huevos", "fecha_vencimiento": "2015-12-08"},
+#     {"NOMBRE": "colino", "fecha_vencimiento": "2020-09-01"}
+# ]
+# print("Productos:")
+# for producto in objetos:
+#     print(f"NOMBRE: {producto['NOMBRE']}, Fecha de vencimiento: {producto['fecha_vencimiento']}")
+# print("\nProductos ordenados por fecha de vencimiento:")
+# for producto in caducidad(objetos):
+#     print(f"NOMBRE: {producto['NOMBRE']}, Fecha de vencimiento: {producto['fecha_vencimiento']}")
